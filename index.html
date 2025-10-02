@@ -7,42 +7,291 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="https://via.placeholder.com/30" alt="Logo" class="d-inline-block align-text-top me-2">Brand</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Portfolio</a></li>
-            <li><a class="dropdown-item" href="#">Team</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Contact</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
 
-<h1>hello</h1>
+  <!-- Header with Navigation -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">PixelCrafter</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">UX/UI Design & Development for Small Businesses</h1>
+            <p class="lead mb-4">As a solo designer-developer, I create seamless digital experiences from concept to code. No handovers, no miscommunication - just beautiful, functional websites delivered directly.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#pricing" class="btn btn-primary btn-lg px-4">View Pricing</a>
+              <a href="#portfolio" class="btn btn-outline-primary btn-lg px-4">See My Work</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-placeholder bg-light rounded p-5 text-center">
+              <p class="text-muted">Website Design Preview</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5 bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">What I Offer</h2>
+            <p class="section-subtitle text-muted">Complete UX/UI design and front-end development from a single creator</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="service-card text-center p-4 bg-white rounded shadow-sm h-100">
+              <div class="service-icon mb-3">
+                <div class="icon-placeholder bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                  <span>R</span>
+                </div>
+              </div>
+              <h3 class="h5 mb-3">Responsive Design</h3>
+              <p class="text-muted">Beautiful websites that look great on all devices, built with Bootstrap 5 for maximum compatibility.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="service-card text-center p-4 bg-white rounded shadow-sm h-100">
+              <div class="service-icon mb-3">
+                <div class="icon-placeholder bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                  <span>A</span>
+                </div>
+              </div>
+              <h3 class="h5 mb-3">Custom Animations</h3>
+              <p class="text-muted">Engage your visitors with smooth animations that bring your website to life without slowing it down.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="service-card text-center p-4 bg-white rounded shadow-sm h-100">
+              <div class="service-icon mb-3">
+                <div class="icon-placeholder bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                  <span>U</span>
+                </div>
+              </div>
+              <h3 class="h5 mb-3">UX/UI Design</h3>
+              <p class="text-muted">Thoughtful user experience and interface design that puts your customers first and drives conversions.</p>
+            </article>
+          </div>
+        </div>
+        
+        <!-- Solo Designer Advantage -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="advantage-card bg-primary text-white rounded p-5">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <h3 class="h2 mb-3">One Designer, One Developer</h3>
+                  <p class="mb-0">As a solo creator, I handle both design and development. This eliminates the handover between designers and developers, ensuring your vision is perfectly executed without communication gaps or compromises.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                  <div class="advantage-icon bg-white text-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                    <span class="fs-1">👤</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">My Recent Work</h2>
+            <p class="section-subtitle text-muted">See how I've helped small businesses establish their online presence</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="portfolio-card bg-white rounded shadow-sm overflow-hidden h-100">
+              <div class="portfolio-image bg-light p-4 text-center" style="height: 200px;">
+                <p class="text-muted mt-4">Project Preview</p>
+              </div>
+              <div class="portfolio-content p-4">
+                <h3 class="h5 mb-2">Local Coffee Shop</h3>
+                <p class="text-muted mb-3">A warm, inviting website with online ordering system and event calendar.</p>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark me-1">Bootstrap</span>
+                  <span class="badge bg-light text-dark me-1">E-commerce</span>
+                  <span class="badge bg-light text-dark">Responsive</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="portfolio-card bg-white rounded shadow-sm overflow-hidden h-100">
+              <div class="portfolio-image bg-light p-4 text-center" style="height: 200px;">
+                <p class="text-muted mt-4">Project Preview</p>
+              </div>
+              <div class="portfolio-content p-4">
+                <h3 class="h5 mb-2">Consulting Firm</h3>
+                <p class="text-muted mb-3">Professional corporate website with service pages and client portal.</p>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark me-1">UX Design</span>
+                  <span class="badge bg-light text-dark me-1">Dashboard</span>
+                  <span class="badge bg-light text-dark">SEO</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="portfolio-card bg-white rounded shadow-sm overflow-hidden h-100">
+              <div class="portfolio-image bg-light p-4 text-center" style="height: 200px;">
+                <p class="text-muted mt-4">Project Preview</p>
+              </div>
+              <div class="portfolio-content p-4">
+                <h3 class="h5 mb-2">Fitness Studio</h3>
+                <p class="text-muted mb-3">Energetic website with class schedules, booking system, and member area.</p>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark me-1">Animations</span>
+                  <span class="badge bg-light text-dark me-1">Booking</span>
+                  <span class="badge bg-light text-dark">Mobile-first</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section py-5 bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle text-muted">Fixed price per page - no hidden costs</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="pricing-card bg-white rounded shadow-sm p-5">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h3 class="h2 fw-bold text-primary mb-3">R1500 <small class="text-muted fs-6">per page</small></h3>
+                  <p class="mb-4">Perfect for small businesses needing a professional online presence.</p>
+                  <ul class="list-unstyled mb-4">
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Up to 8 pages</li>
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Bootstrap 5 responsive design</li>
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Custom animations included</li>
+                    <li class="mb-2"><i class="text-success me-2">✓</i> UX/UI design</li>
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Basic SEO optimization</li>
+                    <li class="mb-2"><i class="text-success me-2">✓</i> Direct collaboration with designer/developer</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <div class="pricing-feature-highlight bg-light rounded p-4">
+                    <h4 class="h5 mb-3">What's Included</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">Mobile-first design approach</li>
+                      <li class="mb-2">Cross-browser compatibility</li>
+                      <li class="mb-2">Fast loading performance</li>
+                      <li class="mb-2">SEO-friendly structure</li>
+                      <li class="mb-2">Custom contact forms</li>
+                      <li class="mb-2">Social media integration</li>
+                      <li class="mb-2">User experience optimization</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-primary btn-lg px-5">Get Started Today</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Ready to Get Started?</h2>
+            <p class="section-subtitle text-muted">Contact me for a free consultation and quote</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form class="contact-form bg-white rounded shadow-sm p-5">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-12">
+                  <label for="business" class="form-label">Business Name</label>
+                  <input type="text" class="form-control" id="business">
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Project Details</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Tell me about your website needs..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2023 PixelCrafter. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">UX/UI Design & Development by a Solo Creator</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 <script src="bootstrap5/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
